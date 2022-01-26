@@ -1,11 +1,27 @@
 #include <iostream>
 using namespace std;
 
-int Rotar(int array[], tamanio){
-    
+int MostrarArray(int array[], int tamanio){
+
+    for (int i= 0; i<tamanio; i++){
+        cout<<array[i]<<" ";
+    }
+
 }
 
-int MostrarArray();
+int Rotar(int array[], int tamanio){
+
+    int temp= array[0];
+
+    int i = 0;
+
+    for (i= 0; i<tamanio; i++){
+        array[i] = array[i+1];
+    }
+
+    array[i] = temp;
+}
+
 
 int main(){
 
@@ -22,5 +38,12 @@ int main(){
         array[i] = elemento;
     }
 
+    cout<<"Antes de rotar el array\n";
+    MostrarArray(array, num_elementos);
+
     Rotar(array, num_elementos);
+    cout<<"Después de rotar el array\n";
+    MostrarArray(array, num_elementos);
+
+    return 0;
 }
