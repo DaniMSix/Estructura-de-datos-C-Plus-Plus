@@ -1,5 +1,5 @@
 /*
-Programa que calcula el enésimo número de Fibonacci
+Programa que calcula el enésimo número de la serie de Fibonacci
 */
 
 #include <iostream>
